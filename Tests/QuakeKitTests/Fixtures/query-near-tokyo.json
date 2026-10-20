@@ -1,0 +1,143 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "generated": 1790000120000,
+  "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-06-23T00:00:00&minmagnitude=4.5&latitude=35.68&longitude=139.77&maxradiuskm=600&orderby=magnitude&limit=3",
+  "title": "USGS Earthquakes",
+  "status": 200,
+  "api": "1.14.1",
+  "limit": 3,
+  "offset": 1,
+  "count": 3
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": 5.2,
+    "place": "38 km SW of Hachinohe, Japan",
+    "time": 1789992800000,
+    "updated": 1789993400000,
+    "tz": null,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000qa03",
+    "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000qa03.geojson",
+    "felt": 18,
+    "cdi": 3.4,
+    "mmi": null,
+    "alert": null,
+    "status": "reviewed",
+    "tsunami": 0,
+    "sig": 420,
+    "net": "us",
+    "code": "6000qa03",
+    "ids": ",us6000qa03,",
+    "sources": ",us,",
+    "types": ",origin,phase-data,",
+    "nst": null,
+    "dmin": 1.5,
+    "rms": 0.7,
+    "gap": 60,
+    "magType": "mww",
+    "type": "earthquake",
+    "title": "M 5.2 - 38 km SW of Hachinohe, Japan"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     141.21,
+     40.29,
+     51.0
+    ]
+   },
+   "id": "us6000qa03"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": 5.0,
+    "place": "77 km E of Katsuura, Japan",
+    "time": 1788272000000,
+    "updated": 1788272600000,
+    "tz": null,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000qb11",
+    "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000qb11.geojson",
+    "felt": 95,
+    "cdi": 4.0,
+    "mmi": null,
+    "alert": null,
+    "status": "reviewed",
+    "tsunami": 0,
+    "sig": 470,
+    "net": "us",
+    "code": "6000qb11",
+    "ids": ",us6000qb11,",
+    "sources": ",us,",
+    "types": ",origin,phase-data,",
+    "nst": null,
+    "dmin": 1.5,
+    "rms": 0.7,
+    "gap": 60,
+    "magType": "mww",
+    "type": "earthquake",
+    "title": "M 5.0 - 77 km E of Katsuura, Japan"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     141.11,
+     35.12,
+     24.8
+    ]
+   },
+   "id": "us6000qb11"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": 4.6,
+    "place": "Izu Islands, Japan region",
+    "time": 1786457600000,
+    "updated": 1786458200000,
+    "tz": null,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000qb12",
+    "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000qb12.geojson",
+    "felt": null,
+    "cdi": null,
+    "mmi": null,
+    "alert": null,
+    "status": "reviewed",
+    "tsunami": 0,
+    "sig": 326,
+    "net": "us",
+    "code": "6000qb12",
+    "ids": ",us6000qb12,",
+    "sources": ",us,",
+    "types": ",origin,phase-data,",
+    "nst": null,
+    "dmin": 1.5,
+    "rms": 0.7,
+    "gap": 60,
+    "magType": "mb",
+    "type": "earthquake",
+    "title": "M 4.6 - Izu Islands, Japan region"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     139.95,
+     33.04,
+     101.7
+    ]
+   },
+   "id": "us6000qb12"
+  }
+ ],
+ "bbox": [
+  139.95,
+  33.04,
+  24.8,
+  141.21,
+  40.29,
+  101.7
+ ]
+}

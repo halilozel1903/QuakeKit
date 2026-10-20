@@ -1,0 +1,101 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  swift:
+    name: Swift tests (macOS)
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v5
+      - name: Toolchain
+        run: |
+          swift --version
+          xcodebuild -version
+      - name: Build
+        run: swift build
+      - name: Test
+        run: swift test
+
+  test:
+    name: Tests (iPadOS)
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v5
+      - name: Build & test on an iPad simulator
+        run: bash scripts/test.sh iOS
+
+  example:
+    name: Example apps
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install XcodeGen
+        run: brew install xcodegen
+      - name: Generate project
+        working-directory: Example
+        run: xcodegen generate
+      - name: Build for iPad Simulator
+        run: |
+          xcodebuild build \
+            -project Example/QuakeWatch.xcodeproj \
+            -scheme QuakeWatch \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO
+      - name: Build for macOS
+        run: |
+          xcodebuild build \
+            -project Example/QuakeWatch.xcodeproj \
+            -scheme QuakeWatchMac \
+            -destination 'platform=macOS' \
+            CODE_SIGNING_ALLOWED=NO
+
+  screenshots:
+    name: README screenshots
+    if: github.event_name != 'pull_request'
+    needs: [swift, test, example]
+    runs-on: macos-26
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install XcodeGen
+        run: brew install xcodegen
+      - name: Generate project
+        working-directory: Example
+        run: xcodegen generate
+      - name: Check the live API
+        run: |
+          # Only a log line: the capture steps below fail on their own when the USGS is down.
+          curl -sS -o /dev/null -w "2.5_week feed: HTTP %{http_code}\n" \
+            https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojson || true
+          curl -sS -o /dev/null -w "4.5_week feed: HTTP %{http_code}\n" \
+            https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson || true
+          curl -sS -w "\ncount M6+ since 2025-10-01: HTTP %{http_code}\n" \
+            "https://earthquake.usgs.gov/fdsnws/event/1/count?format=geojson&starttime=2025-10-01&minmagnitude=6" || true
+      # Live data from earthquake.usgs.gov and live Apple Maps tiles; writes mac-map.png and
+      # mac-list.png.
+      - name: Capture Mac screenshots
+        run: bash scripts/screenshots-mac.sh QuakeWatchMac map list
+      # Live data and map tiles; writes ipad-map.png and ipad-detail.png.
+      - name: Capture iPad screenshots
+        run: bash scripts/screenshots-ipad.sh QuakeWatch io.github.halilozel1903.QuakeWatch map detail
+      - name: Commit screenshots
+        run: |
+          git config user.name "Halil Özel"
+          git config user.email "halilozel1903@gmail.com"
+          git add docs/screenshots
+          if git diff --cached --quiet; then
+            echo "Screenshots unchanged"
+          else
+            git commit -m "Update README screenshots [skip ci]"
+            git push
+          fi

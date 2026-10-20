@@ -1,0 +1,270 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "generated": 1790000060000,
+  "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson",
+  "title": "USGS Magnitude 4.5+ Earthquakes, Past Week",
+  "status": 200,
+  "api": "1.14.1",
+  "count": 7
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": 6.4,
+    "place": "112 km E of Hachinohe, Japan",
+    "time": 1790000000000,
+    "updated": 1790000600000,
+    "tz": null,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000qa01",
+    "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000qa01.geojson",
+    "felt": 212,
+    "cdi": 5.1,
+    "mmi": 5.6,
+    "alert": "yellow",
+    "status": "reviewed",
+    "tsunami": 1,
+    "sig": 829,
+    "net": "us",
+    "code": "6000qa01",
+    "ids": ",us6000qa01,",
+    "sources": ",us,",
+    "types": ",dyfi,losspager,moment-tensor,origin,phase-data,shakemap,",
+    "nst": null,
+    "dmin": 1.5,
+    "rms": 0.7,
+    "gap": 28,
+    "magType": "mww",
+    "type": "earthquake",
+    "title": "M 6.4 - 112 km E of Hachinohe, Japan"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     142.85,
+     40.55,
+     35.2
+    ]
+   },
+   "id": "us6000qa01"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": 4.7,
+    "place": "South Sandwich Islands region",
+    "time": 1789996400000,
+    "updated": 1789997000000,
+    "tz": null,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000qa02",
+    "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000qa02.geojson",
+    "felt": null,
+    "cdi": null,
+    "mmi": null,
+    "alert": null,
+    "status": "reviewed",
+    "tsunami": 0,
+    "sig": 340,
+    "net": "us",
+    "code": "6000qa02",
+    "ids": ",us6000qa02,",
+    "sources": ",us,",
+    "types": ",origin,phase-data,",
+    "nst": null,
+    "dmin": 1.5,
+    "rms": 0.7,
+    "gap": 60,
+    "magType": "mb",
+    "type": "earthquake",
+    "title": "M 4.7 - South Sandwich Islands region"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -26.31,
+     -58.12,
+     90.4
+    ]
+   },
+   "id": "us6000qa02"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": 5.2,
+    "place": "38 km SW of Hachinohe, Japan",
+    "time": 1789992800000,
+    "updated": 1789993400000,
+    "tz": null,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000qa03",
+    "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000qa03.geojson",
+    "felt": 18,
+    "cdi": 3.4,
+    "mmi": null,
+    "alert": null,
+    "status": "reviewed",
+    "tsunami": 0,
+    "sig": 420,
+    "net": "us",
+    "code": "6000qa03",
+    "ids": ",us6000qa03,",
+    "sources": ",us,",
+    "types": ",origin,phase-data,",
+    "nst": null,
+    "dmin": 1.5,
+    "rms": 0.7,
+    "gap": 60,
+    "magType": "mww",
+    "type": "earthquake",
+    "title": "M 5.2 - 38 km SW of Hachinohe, Japan"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     141.21,
+     40.29,
+     51.0
+    ]
+   },
+   "id": "us6000qa03"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": 4.6,
+    "place": "no geometry",
+    "time": 1790000000000
+   },
+   "id": "us6000bad1"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": 4.5,
+    "place": "Fiji region",
+    "time": 1789913600000,
+    "updated": 1789914200000,
+    "tz": null,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000qa04",
+    "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000qa04.geojson",
+    "felt": null,
+    "cdi": null,
+    "mmi": null,
+    "alert": null,
+    "status": "reviewed",
+    "tsunami": 0,
+    "sig": 312,
+    "net": "us",
+    "code": "6000qa04",
+    "ids": ",us6000qa04,",
+    "sources": ",us,",
+    "types": ",origin,phase-data,",
+    "nst": null,
+    "dmin": 1.5,
+    "rms": 0.7,
+    "gap": 60,
+    "magType": "mb",
+    "type": "earthquake",
+    "title": "M 4.5 - Fiji region"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -178.4,
+     -17.9,
+     560.3
+    ]
+   },
+   "id": "us6000qa04"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": 4.9,
+    "place": "central Mid-Atlantic Ridge",
+    "time": 1789827200000,
+    "updated": 1789827800000,
+    "tz": null,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000qa05",
+    "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000qa05.geojson",
+    "felt": null,
+    "cdi": null,
+    "mmi": null,
+    "alert": null,
+    "status": "automatic",
+    "tsunami": 0,
+    "sig": 369,
+    "net": "us",
+    "code": "6000qa05",
+    "ids": ",us6000qa05,",
+    "sources": ",us,",
+    "types": ",origin,phase-data,",
+    "nst": null,
+    "dmin": 1.5,
+    "rms": 0.7,
+    "gap": 60,
+    "magType": "mb",
+    "type": "earthquake",
+    "title": "M 4.9 - central Mid-Atlantic Ridge"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -29.9,
+     0.9,
+     10.0
+    ]
+   },
+   "id": "us6000qa05"
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "mag": null,
+    "place": "offshore Northern California",
+    "time": 1789740800000,
+    "updated": 1789741400000,
+    "tz": null,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000qa06",
+    "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000qa06.geojson",
+    "felt": null,
+    "cdi": null,
+    "mmi": null,
+    "alert": null,
+    "status": "automatic",
+    "tsunami": 0,
+    "sig": 0,
+    "net": "us",
+    "code": "6000qa06",
+    "ids": ",us6000qa06,",
+    "sources": ",us,",
+    "types": ",origin,phase-data,",
+    "nst": null,
+    "dmin": 1.5,
+    "rms": 0.7,
+    "gap": 60,
+    "magType": "mb",
+    "type": "earthquake",
+    "title": "offshore Northern California"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -125.1,
+     40.3,
+     12.0
+    ]
+   },
+   "id": "us6000qa06"
+  }
+ ],
+ "bbox": [
+  -178.4,
+  -58.12,
+  10.0,
+  142.85,
+  40.55,
+  560.3
+ ]
+}

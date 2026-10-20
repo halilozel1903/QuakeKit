@@ -1,0 +1,172 @@
+{
+ "type": "Feature",
+ "properties": {
+  "mag": 6.4,
+  "place": "112 km E of Hachinohe, Japan",
+  "time": 1790000000000,
+  "updated": 1790000600000,
+  "tz": null,
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000qa01",
+  "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000qa01.geojson",
+  "felt": null,
+  "cdi": 5.1,
+  "mmi": null,
+  "alert": null,
+  "status": "reviewed",
+  "tsunami": 1,
+  "sig": 829,
+  "net": "us",
+  "code": "6000qa01",
+  "ids": ",us6000qa01,",
+  "sources": ",us,",
+  "types": ",dyfi,losspager,moment-tensor,origin,phase-data,shakemap,",
+  "nst": null,
+  "dmin": 1.5,
+  "rms": 0.7,
+  "gap": 28,
+  "magType": "mww",
+  "type": "earthquake",
+  "title": "M 6.4 - 112 km E of Hachinohe, Japan",
+  "products": {
+   "origin": [
+    {
+     "indexid": "1",
+     "indexTime": 1790000300000,
+     "id": "urn:usgs-product:jma:origin:us6000qa01:1790000300000",
+     "type": "origin",
+     "code": "us6000qa01",
+     "source": "jma",
+     "updateTime": 1790000300000,
+     "status": "UPDATE",
+     "properties": {
+      "depth": "34.8",
+      "magnitude": "6.3",
+      "magnitude-type": "mb",
+      "num-stations-used": "88"
+     },
+     "preferredWeight": 6,
+     "contents": {}
+    },
+    {
+     "indexid": "1",
+     "indexTime": 1790000900000,
+     "id": "urn:usgs-product:us:origin:us6000qa01:1790000900000",
+     "type": "origin",
+     "code": "us6000qa01",
+     "source": "us",
+     "updateTime": 1790000900000,
+     "status": "UPDATE",
+     "properties": {
+      "depth": "35.2",
+      "magnitude": "6.4",
+      "magnitude-type": "Mww",
+      "num-stations-used": "141",
+      "azimuthal-gap": "28",
+      "horizontal-error": "6.2",
+      "vertical-error": "1.8",
+      "review-status": "reviewed",
+      "eventtime": "2026-09-21T14:13:20.000Z"
+     },
+     "preferredWeight": 156,
+     "contents": {
+      "contents.xml": {
+       "contentType": "application/xml",
+       "lastModified": 1790000900000,
+       "length": 3020,
+       "url": "https://earthquake.usgs.gov/product/origin/us6000qa01/us/1/contents.xml"
+      }
+     }
+    }
+   ],
+   "dyfi": [
+    {
+     "indexid": "1",
+     "indexTime": 1790000900000,
+     "id": "urn:usgs-product:us:dyfi:us6000qa01:1790000900000",
+     "type": "dyfi",
+     "code": "us6000qa01",
+     "source": "us",
+     "updateTime": 1790000900000,
+     "status": "UPDATE",
+     "properties": {
+      "maxmmi": "5.1",
+      "num-responses": "240",
+      "numResp": 240
+     },
+     "preferredWeight": 16,
+     "contents": {}
+    }
+   ],
+   "losspager": [
+    {
+     "indexid": "1",
+     "indexTime": 1790000900000,
+     "id": "urn:usgs-product:us:losspager:us6000qa01:1790000900000",
+     "type": "losspager",
+     "code": "us6000qa01",
+     "source": "us",
+     "updateTime": 1790000900000,
+     "status": "UPDATE",
+     "properties": {
+      "alertlevel": "Yellow",
+      "maxmmi": "6.1"
+     },
+     "preferredWeight": 156,
+     "contents": {}
+    }
+   ],
+   "shakemap": [
+    {
+     "indexid": "1",
+     "indexTime": 1790000900000,
+     "id": "urn:usgs-product:us:shakemap:us6000qa01:1790000900000",
+     "type": "shakemap",
+     "code": "us6000qa01",
+     "source": "us",
+     "updateTime": 1790000900000,
+     "status": "UPDATE",
+     "properties": {
+      "maxmmi": "5.6",
+      "maxpga": "14.2"
+     },
+     "preferredWeight": 156,
+     "contents": {
+      "download/intensity.jpg": {
+       "contentType": "image/jpeg",
+       "lastModified": 1790000950000,
+       "length": 128000,
+       "url": "https://earthquake.usgs.gov/product/shakemap/us6000qa01/us/1/download/intensity.jpg"
+      }
+     }
+    }
+   ],
+   "moment-tensor": [
+    {
+     "indexid": "1",
+     "indexTime": 1790000900000,
+     "id": "urn:usgs-product:us:moment-tensor:us6000qa01:1790000900000",
+     "type": "moment-tensor",
+     "code": "us6000qa01",
+     "source": "us",
+     "updateTime": 1790000900000,
+     "status": "DELETE",
+     "properties": {
+      "derived-magnitude": "6.4"
+     },
+     "preferredWeight": 0,
+     "contents": {}
+    },
+    "not a product"
+   ]
+  }
+ },
+ "geometry": {
+  "type": "Point",
+  "coordinates": [
+   142.85,
+   40.55,
+   35.2
+  ]
+ },
+ "id": "us6000qa01"
+}
