@@ -75,7 +75,8 @@ final class QuakeStore {
 
         var title: String {
             switch self {
-            case let .feed(feed): feed.title
+            // Short enough for the list column's title next to its toolbar buttons.
+            case let .feed(feed): feed.magnitude.title + " · " + feed.period.rawValue.capitalized
             case let .catalog(search): search.title
             }
         }

@@ -79,6 +79,8 @@ struct InfoChip: View {
         Label(text, systemImage: systemImage)
             .font(.caption.weight(.semibold))
             .labelStyle(.titleAndIcon)
+            .lineLimit(1)
+            .fixedSize()
             .padding(.horizontal, 8)
             .padding(.vertical, 4)
             .foregroundStyle(tint)
